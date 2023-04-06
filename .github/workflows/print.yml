@@ -1,0 +1,10 @@
+name: My Action
+
+on: [push]
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a message
+        run: echo "Hello, solace!"
