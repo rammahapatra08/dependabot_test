@@ -26,7 +26,7 @@ updates:
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "every 1 minute"
     registry: "gcr.io/gcp-maas-prod/"
     labels:
       - "latest"
