@@ -8,20 +8,8 @@ registries:
   gcr: # Define access for a private registry
     type: docker-registry
     url: gcr.io
-    username: _json_key
-    password: |
-     {
-        "type": "service_account",
-        "project_id": "gcp-maas-prod",
-        "private_key_id": "6a935cd36cbe4b5021a0ca06565ccdf97e9fef4a",
-        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC5DoXUfS2iiwS1\nybgbKu+6Q0+vdLN7CJjqS6Cfxn7MWFZf062acdCRLze80H42etlJlugoXp3fGCdQ\nNz0/ZygsFEYuyUFD0XEKLyTLdexDyIvPi/cTgi4M3QHBJxZTHiJuhPX4Geins8FM\nndbtB7R0VSOD2rcQo0QiztIz992z9seFuEYW8oRImnWHhmErhcqAM67jibtIT9U/\no+IUYk6ErmwQhDp52P3Q336HI63s9GK3rPNjO/AlAudmfCiTeG8RB2elK9D13646\nEQDtc9YIDvvDhHnUqlPqK+BiDiQDNoMYMl5074yt/w8uQGZk1X76fL6SPkHBJdcy\nYM+0xF63AgMBAAECggEAUOocMzpeq00szI28fciK1H8dBwM4fQnXzs4tl97zT0cq\n0TCdnkO4pdqm/NyO6yRRAN/Gd+xTDBqkCet1UNU6l/dvboKaElywF/tgE8Rmf4bf\nNuskp/eKSh6SZ1G/ba1l8bwaTpaJh1ZOJUF4meB+E0WsxzjpRZGVt8CF4ao12rtC\nrmsfDQz5VxV1Cdqr++UUfi1NioPPQXufsq0q2uwbVtXUdaEghhGQWJJL++taqeVR\n68hpjGhi478AeVqHVKtnnhPzBmo/TGsaRIp1CKgGkamPOMWXb86iEWWu+VThugJu\nBFenp7S1IouS0tv9Aa7PelvAcz9poKuTFMhodl6IjQKBgQD8xCl7iRTteUg77pVd\n8cRRXfSnhZ8yuJbUnHE8C9Kfq5eys/7KGEmm+ZUap9e3adfGLVD+oFcQWGESBOB5\nLO0JP2mtlDjL5czDGzQW/flUv4/SnMf5Ssp5FdDciTldUzmAXC4gZ48xei9LuVo5\ncpdwMnuaxifhfXxCYPSQsvknJQKBgQC7bJq6GMMjKZSOhL2OTPMC+WTn4Iz6KO60\ntQon/u5Z6UeUdORCkl0vpcdXS86atii9mmxrACcw47RWdhj7uVXp2tJb3s+VEXta\nFJiZ/JVxTts7jULj3Cqs/q0/HPTbR9eYly+RAw8mdb/bsujiOSDrQ4diTCdFUu7M\nJ52KR62FqwKBgQDTMXuPknv/50QpfzEiK21ipuRSTF013fF4d7ZM+3vimVbIo4gR\nh7WSZBrnCLI+t5roJNj1xza3m4CPs69yz8zF20wLEjtacgliQ4qEY3Q+EUi0KvcT\nHiCKh2XZvnZFudHjpCGORbjpGDQISzhNo6dQwX1xVnvf9h8qvyPY+xEeWQKBgAXy\nEQp8RJx18jd/MIA2IrNic/gDIJXC/KeQ4qyYIrmJc/Larm8KM5iSWruDNR+lTa+O\nGYhfbd7YKl1fy7UYkQglH+04KT+iWVZnNtwTri31AXFnLssJrfTk81wAMChQpB88\nFI82GKHwtFBk4YxjoY61CrNslQZW9ipVy2KamX+XAoGBANSLmO0zB4Y7/Z0MKjbh\n1fguXybcWtQL3gmAhSOldq337FULxtdgTqmbmue1nuCZcEOlqtWkIN0rr4exE/ol\nPRWIwjXfoPqPBbVFWAMhM2l6DdV2VZellKVKyqe7R9cW1XiOcOpS1KAky6rSL8SW\npPS01Tx7UUCVVOZ4xLyTXkuh\n-----END PRIVATE KEY-----\n",
-        "client_email": "PR-b724py0jltd@gcp-maas-prod.iam.gserviceaccount.com",
-        "client_id": "107373874079200866515",
-        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-        "token_uri": "https://oauth2.googleapis.com/token",
-        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/PR-b724py0jltd%40gcp-maas-prod.iam.gserviceaccount.com"
-      }
+    username:
+    password: 
 updates:
   - package-ecosystem: "docker"
     directory: "/"
