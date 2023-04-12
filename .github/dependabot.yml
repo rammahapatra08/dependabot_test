@@ -21,7 +21,7 @@ updates:
     schedule:
       interval: "daily"
     registries:
-      - dockerhub
+      - docker
 #     labels:
 #       - "latest"
 #       - "dependencies"
