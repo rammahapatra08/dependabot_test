@@ -5,28 +5,29 @@
 
 version: 2
 registries:
-  gcr: # Define access for a private registry
+  docker: # Define access for a private registry
     type: docker-registry
-    url: gcr.io
-    username:
-    password: 
+    url: registry.hub.docker.com
+    username: rammahapatra
+    password: Chemistry!23
+#   gcr: # Define access for a private registry
+#     type: docker-registry
+#     url: gcr.io
+#     username:
+#     password: 
 updates:
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
-      interval: "every 1 minute"
-    registry: "gcr.io/gcp-maas-prod/"
-    labels:
-      - "latest"
-      - "dependencies"
-      - "gcr-update"
+      interval: "daily"
+    registries:
+      - dockerhub
+#     labels:
+#       - "latest"
+#       - "dependencies"
+#       - "gcr-update"
     allow:
       - dependency-type: "docker"
         update-type: "version"
     open-pull-requests-limit: 10
-    create-pr: true      # enable PR creation
     commit-message: "chore(deps): update solace image tags"
-    automerge: false     # disable automatic merging of PRs
-    strategy:
-      merge:
-        method: "squash"
