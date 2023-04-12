@@ -30,4 +30,5 @@ updates:
       - dependency-type: "docker"
         update-type: "version"
     open-pull-requests-limit: 10
-    commit-message: "chore(deps): update solace image tags"
+    commit-message:
+      prefix: "chore(deps): update solace image tags "
