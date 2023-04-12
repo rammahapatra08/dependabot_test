@@ -26,9 +26,6 @@ updates:
 #       - "latest"
 #       - "dependencies"
 #       - "gcr-update"
-    allow:
-      - dependency-type: "docker"
-        update-type: "version"
     open-pull-requests-limit: 10
     commit-message:
       prefix: "chore(deps): update solace image tags "
