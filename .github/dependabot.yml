@@ -5,7 +5,7 @@
 
 version: 2
 registries:
-  docker: # Define access for a private registry
+  dockerhub: # Define access for a private registry
     type: docker-registry
     url: registry.hub.docker.com
     username: rammahapatra
@@ -17,15 +17,12 @@ registries:
 #     password: 
 updates:
   - package-ecosystem: "docker"
-    directory: "/"
+    directory: "/manifests/busybox"
     schedule:
       interval: "daily"
     registries:
-      - docker
+      - dockerhub
 #     labels:
 #       - "latest"
 #       - "dependencies"
 #       - "gcr-update"
-    open-pull-requests-limit: 10
-    commit-message:
-      prefix: "chore(deps): update solace image tags "
