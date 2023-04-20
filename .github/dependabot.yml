@@ -19,7 +19,7 @@ updates:
   - package-ecosystem: "docker"
     directory: "/manifests/busybox"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     registries:
       - dockerhub
 #     labels:
